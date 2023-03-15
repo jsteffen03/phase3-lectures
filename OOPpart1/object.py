@@ -4,5 +4,5 @@
 # 3) Global Class variables???
 # 4) Using self
 # 5) Creating a method for this class
-# 6) Using Properties, property(), to set setters and getter functions (raise for errors?)
-# 7) Decorators and CLS (@classmethod)
+# 6) Using Properties, property(), to set setters and getter functions
+# 7) Decorators and CLS (@classmethod)ß
