@@ -4,5 +4,6 @@
 # 3) Global Class variables???
 # 4) Using self
 # 5) Creating a method for this class
-# 6) Using Properties, property(), to set setters and getter functions
-# 7) Decorators and CLS (@classmethod)ß
+# 6) Using __repr__
+# 7) Using Properties, property(), to set setters and getter functions (https://www.programiz.com/python-programming/property)
+# 8) Decorators and CLS (@classmethod)
