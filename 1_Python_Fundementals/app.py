@@ -38,7 +38,6 @@ b = "hello"
 #Variables
 #Todo 5: Create a variable and assign it to a value
 
-#Global Variables
 
 #Python Data Types
 #Todo 6: Create a data type variable
