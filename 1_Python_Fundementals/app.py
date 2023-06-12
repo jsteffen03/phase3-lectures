@@ -57,6 +57,8 @@ b = "hello"
 
 #Set
 
+#list
+
 #Dictionary
 
 #Type Conversion
@@ -120,8 +122,6 @@ pet_mood = "Hungry"
 #While Loop
 
 #For Loop and Range
-
-#List Comprehension
 
 #String Interpolation example
 
