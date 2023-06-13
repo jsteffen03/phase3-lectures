@@ -1,12 +1,7 @@
 # 1) Lets create a class, use pass and create a class! Then use 
 #    __init__ think of the key attributes of it
-class Dog:
     # Global class variables
-    dognames = []
-    specieslist = []
     # Init, runs on creating this class
-    def __init__(self):
-        pass
     # Methods!
     # Properties
     # Orders matters, check documentation linked below!
@@ -15,8 +10,6 @@ class Dog:
     # @classmethod
 
     # This runs when we run print on the class
-    def __repr__(self):
-        pass
         
 if __name__ == "__main__":
     # 2) Now lets instantiate a few of them. A question is, are they the same?
@@ -26,3 +19,4 @@ if __name__ == "__main__":
     # 6) Using __repr__
     # 7) Using Properties, property(), to set setters and getter functions (https://www.programiz.com/python-programming/property)
     # 8) Decorators and CLS (@classmethod)
+    pass
