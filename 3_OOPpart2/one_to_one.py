@@ -1,18 +1,29 @@
-# Lets say we are playing Mario Kart, well we can relate a Character to a Kart
-# and vice versa 
-class Character:
-    # Kart is an object, based on the class kart
-    def __init__(self):
-        pass
-    # We can make it so that we can set the character of the new kart using property
 
-class Kart:
-    def __init__(self):
+class Pet:
+    def __init__(self,name,species):
+        self.name = name
+        self.species = species
+        self.owner = None
         pass
+
+class Owner:
+    def __init__(self,name):
+        self.name = name
+        self.pet = None
+
+    def adopt(self,pet):
+        if type(pet) is Pet:
+            self.pet = pet
+            pet.owner = self
+        else:
+            raise Exception("Not valid pet")
 
 
 
 if __name__ == '__main__':
-    # Lets assign a kart and a character
-    
+    midna = Pet(name = "Midna",species = "Long Haired Tabby")
+    david = Owner(name = "David")
+    david.adopt("midna")
+
+    print(midna.owner.name)
     pass

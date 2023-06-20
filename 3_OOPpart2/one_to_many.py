@@ -1,34 +1,65 @@
-# Here we have one DungeonMaster that can have many players how can we do that?
-class DungeonMaster:
-    def __init__(self,name):
+class NBATeams:
+    # Global variables for a class
+    all_teams = []
+    def __init__(self,name,mascot):
         self.name = name
+        self.mascot = mascot
         self.players = []
-    def partylist(self):
+        NBATeams.all_teams.append(self)
+    # Create a method
+    def addPlayer(self,player):
+        if type(player) is Player:
+            self.players.append(player)
+            if player.team:
+                player.team.removePlayer(player)
+            player.team = self
+            player.history.append(self)
+
+    def removePlayer(self,player_to_remove):
         for player in self.players:
-            print(f'{player.name}: {player.dndclass}')
+            if player == player_to_remove:
+                self.players.remove(player_to_remove)
+
+
+    def get_name(self):
+        return self._name
+    def set_name(self,value):
+        if value:
+            self._name = value
+        else:
+            raise Exception("Not valid name")
+    name = property(get_name,set_name)
+
+    @classmethod
+    def callAllPlayers(cls):
+        for team in cls.all_teams:
+            for player in team.players:
+                print(player)
+        pass
+
+    @staticmethod
+    def staticPrint():
+        print("Static")
 
 class Player:
-    def __init__(self,name,dndclass):
+    def __init__(self,name,number):
         self.name = name
-        self.dndclass = dndclass
-        self.dm = None
-
+        self.number = number
+        self.history = []
+        self.team = None
 
 if __name__ == '__main__':
-    # Create players
-    jonah = Player("Jonah","Rogue")
-    abby = Player("Abby","Thief")
-    gage = DungeonMaster("Gage")
-    # Attatch dm to each player
-    jonah.dm = gage
-    abby.dm = gage
-    # attatch players to dm
-    gage.players = [jonah,abby]
-    # Create a new player and add it to dillon
-    dillon = Player("Dillon","Princess Ruffian")
-    gage.players.append(dillon)
-    gage.partylist()
-    # Don't forget to set dillons dm to gage!
-    dillon.dm = gage
-    
-
+    nuggets = NBATeams("Nuggets","Rocky")
+    heats = NBATeams("Heats","Fury")
+    jokic = Player("Jokic",15)
+    nuggets.addPlayer(jokic)
+    print(jokic.history)
+    print(jokic.team.name)
+    print(nuggets.players)
+    heats.addPlayer(jokic)
+    print(jokic.history)
+    print(jokic.team.name)
+    print(heats.players)
+    print(nuggets.players)
+    heats.removePlayer(jokic)
+    print(heats.players)
