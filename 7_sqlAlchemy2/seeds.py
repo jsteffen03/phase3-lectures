@@ -1,6 +1,6 @@
 from faker import Faker
 from random import randint
-from manymany import Meal
+from review import Student
 from sqlalchemy import Column, Integer, String, create_engine, func
 from sqlalchemy.orm import Session, declarative_base
 # How do we delete all? Check out delete and remove any filter
