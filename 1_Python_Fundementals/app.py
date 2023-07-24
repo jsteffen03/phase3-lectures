@@ -190,7 +190,6 @@ item_list = ["apple","orange","peach"]
 for i in item_list:
     print(i)
 
-<<<<<<< HEAD
 for i in range(10):
     print(i)
 
@@ -203,8 +202,6 @@ for key,value in new_dict.items():
 # for key in new_dict:
 #     print(new_dict[key])
 
-=======
->>>>>>> main
 #String Interpolation example
 #Todo 9: Move conditional logic from Deliverable 1 into a function (pet_status) so that we may 
 # use it with different pets / moods
