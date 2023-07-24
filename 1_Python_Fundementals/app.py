@@ -5,7 +5,7 @@
 #Todo 1: print a simple string and run the file in your terminal using the command python3 <filename> or the executable option
 
 #Python Package Index
-#To install packages use 'pip install package_name'
+#To install packages use 'pipenv install package_name'
 #Todo 2: Find a pip package from the PyPi library, install the package and use the package to perform a simple task
 # https://pypi.org/ 
 
