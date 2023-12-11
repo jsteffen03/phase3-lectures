@@ -4,6 +4,7 @@
 #Lastly, run the file in your terminal as follows: /path/to/your/script.py
 #Todo 1: print a simple string and run the file in your terminal using the command python3 <filename> or the executable option
 
+
 #Python Package Index
 #To install packages use 'pipenv install package_name'
 #Todo 2: Find a pip package from the PyPi library, install the package and use the package to perform a simple task
@@ -19,8 +20,6 @@
 #Variables
 #Todo 5: Create a variable and assign it to a value
 
-#Global Variables
-
 #Python Data Types
 #Todo 6: Create a data type variable
 
@@ -33,6 +32,8 @@
 #bool
 
 #None
+
+#list
 
 #Tuple
 
@@ -53,9 +54,11 @@
 #if condition:
     #statement if the condition is true
 
+
 #if/else syntax
 #if condition:
 #else:
+
 
 #if/elif/else syntax
 #if condition:
@@ -83,7 +86,9 @@
 
 #Test if a string is empty
 
+
 #Test if a number is positive or negative using an else
+
 
 #Test if a number is positve, negative, or zero, using if, elif, and else
 
@@ -93,18 +98,12 @@
 
 #Test if a string is empty or not
 
-#Todo 8: Create a condition to check a pet's mood using an if/elif/else and a ternary
-
-#If "pet_mood" is "Hungry!", "Tracker needs to be fed."
-#If "pet_mood" is "Whinny ", "Tracker needs a walk"
-#In all other cases, "Tracker is all good"
+#Todo 8: Create a condition to check a pet's mood using an if/elif/else and a ternaryd
 
 #While Loop
-
 #For Loop and Range
 
 #String Interpolation example
-
 #Todo 9: Move conditional logic from Deliverable 1 into a function (pet_status) so that we may 
 # use it with different pets / moods
 # Test invocation of "pet_status" in ipdb using "pet_status(pet_name, pet_mood)"
@@ -123,4 +122,3 @@
 # pet_birthday(10) => "Happy Birthday! Your pet is now 11."
 # pet_birthday("oops") => "Type Error Occurred"
 
-#Todo 13: Creating test in python

@@ -2,9 +2,11 @@
 # Create a class
     # Global variables for a class
     # Create a method
-# print(tracker.name)
 
 # Properties, we can do any checks in here!!
 # Decorators
-# bench
 # Review property underscore
+# repr vs str
+
+# Static methods
+# - Do not require any instances so we don't need to pass self or cls

@@ -4,10 +4,9 @@
     # Init, runs on creating this class
     # Methods!
     # Properties
+    # Takes inputs, functions
     # Orders matters, check documentation linked below!
-
     # Class Methods!
-    # @classmethod
 
     # This runs when we run print on the class
         

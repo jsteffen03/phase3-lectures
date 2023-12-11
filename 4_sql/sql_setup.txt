@@ -21,6 +21,20 @@ CREATE TABLE <tablename2>(
     FOREIGN KEY (tablename_id) REFERENCES tablename(id)
 );
 
+classname, period, room_number, time, student_id, teacher_id
+CREATE TABLE schedule(
+    id INTEGER PRIMARY KEY,
+    classname TEXT,
+    period INTEGER,
+    room_number INTEGER,
+    time TEXT,
+    student_id INTEGER,
+    teacher_id INTEGER,
+    FOREIGN KEY (student_id) REFERENCES student(id),
+    FOREIGN KEY (teacher_id) REFERENCES teacher(id)
+);
+
+
 Lets show these tables, sqlite can see the schema using
 .schema
 Or just show existing tables
@@ -72,3 +86,8 @@ JOIN <tablename> ### This should be the table that is referenced
 ON <tablename>.<attribute> = <tablename2>.attribute;
 
 When we are done just type .exit
+
+SELECT student.name, schedule.classname, schedule.time
+   FROM schedule
+   JOIN student
+   ON schedule.student_id = student.id;
