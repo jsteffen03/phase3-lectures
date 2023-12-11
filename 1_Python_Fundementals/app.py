@@ -12,25 +12,6 @@
 #Debugging using ipdb
 #Todo 3: Debugging the following code using ipdb
 # add a set_trace() in the code, and when you are in the ipdb terminal print the x and y variables
-import ipdb
-
-def multiply(a,b):
-    result = a * b
-    return result
-
-x  = '0'
-y = 5
-num = multiply(x,y)
-print(num)
-
-def addition(a,b):
-    result = a + b
-    ipdb.set_trace()
-    return result
-
-a = 60
-b = "hello"
-
 
 # You can also use the python shell and use print statements to debug code
 #Todo 4: Create an error in your code and debug the code using the python shell and print statements
@@ -113,8 +94,7 @@ b = "hello"
 #Test if a string is empty or not
 
 #Todo 8: Create a condition to check a pet's mood using an if/elif/else and a ternary
-pet_name = "tracker"
-pet_mood = "Hungry"
+
 #If "pet_mood" is "Hungry!", "Tracker needs to be fed."
 #If "pet_mood" is "Whinny ", "Tracker needs a walk"
 #In all other cases, "Tracker is all good"
